@@ -1,4 +1,3 @@
-require "user.autocmds"
 local config = {
 
   -- Configure AstroNvim updates
