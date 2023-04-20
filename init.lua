@@ -100,7 +100,7 @@ local config = {
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
       },
-      timeout_ms = 1000, -- default format timeout
+      timeout_ms = 5000, -- default format timeout
     },
   },
 
@@ -138,6 +138,8 @@ local config = {
       -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
       config.sources = {
         null_ls.builtins.formatting.goimports,
+        null_ls.builtins.formatting.eslint_d,
+        null_ls.builtins.diagnostics.eslint_d,
       }
       return config -- return final config table
     end,
