@@ -119,6 +119,7 @@ local config = {
       ["<leader>bj"] = { "<cmd>BufferLinePick<cr>", desc = "Pick to jump" },
       ["<leader>bt"] = { "<cmd>BufferLineSortByTabs<cr>", desc = "Sort by tabs" },
       ["<leader>ga"] = { "<cmd>!git add %<cr><cr>", desc = "Git add file" },
+      ["<C-0>"] = { "^", desc = "Go to beginning of line text" },
       -- quick save
     },
     t = {
